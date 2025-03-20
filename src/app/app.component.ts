@@ -1,18 +1,17 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HomeType } from './models/home-type';
-import { HomeCardComponent } from './components/home-card/home-card.component';
+import { Home } from './models/home-type';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HomeCardComponent],
+  imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
   title = "angular-homes";
 
-  mockHome: HomeType = {
+  mockHome: Home = {
     id: 1,
     title: "Modern Beachfront Villa",
     description: "Luxurious beachfront property with amazing ocean views and modern amenities. Perfect for family vacations or retreats.",
